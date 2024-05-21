@@ -1,0 +1,31 @@
+import = ["/home/senelway/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[colors.cursor]
+cursor = "#00ffcb"
+text = "#1E1E2E"
+
+[font]
+size = 6.4
+normal = { family = "Fira Code"  }
+
+[font.offset]
+x = 0
+y = 3
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+[mouse]
+hide_when_typing = true
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+dynamic_title = false
