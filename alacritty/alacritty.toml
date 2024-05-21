@@ -1,5 +1,8 @@
 import = ["/home/senelway/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
 
+[env]
+TERM = "xterm-256color"
+
 [colors.cursor]
 cursor = "#00ffcb"
 text = "#1E1E2E"
