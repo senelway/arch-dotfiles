@@ -203,4 +203,10 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
+default_border pixel 1
+default_floating_border pixel 0
+focus_follows_mouse no
+
+bindsym $mod+Shift+x exec --no-startup-id i3lock -i ~/.config/i3/lock.png 
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh &

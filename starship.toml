@@ -120,7 +120,7 @@ style = 'bold dimmed green'
 [os]
 format = "[$symbol]($style)"
 style = "bold blue"
-disabled = true
+disabled = false
 
 [os.symbols]
 Alpaquita = " "

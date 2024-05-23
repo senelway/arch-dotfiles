@@ -24,7 +24,8 @@ sudo pacman -S --noconfirm \
   thunar \
   postgresql \
   docker \
-  telegram-desktop
+  telegram-desktop \
+  i3lock
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
