@@ -25,7 +25,8 @@ sudo pacman -S --noconfirm \
   postgresql \
   docker \
   telegram-desktop \
-  i3lock
+  i3lock \
+  rofi
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
