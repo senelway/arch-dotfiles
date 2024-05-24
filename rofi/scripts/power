@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+power_off=' Power off'
+reboot=' Reboot'
+lock=' Lock'
+
+chosen=$(printf '%s;%s;%s;' "$power_off" "$reboot" "$lock" | rofi -dmenu -sep ';' -selected-row 2 -theme catppuccin-mocha)
+ 
+case "$chosen" in
+  "$power_off")
+    rofi-prompt --query 'Shutdown?' && poweroff
+    ;;
+
+  "$reboot")
+    rofi-prompt --query 'Reboot?' && reboot
+    ;;
+
+  "$lock")
+    i3lock -i ~/.config/i3/lock.png
+      ;;
+
+  *) exit 1 ;;
+esac
