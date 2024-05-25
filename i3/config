@@ -198,12 +198,11 @@ default_border pixel 1
 default_floating_border pixel 0
 focus_follows_mouse no
 
-
 bindsym $mod+Shift+s sticky toggle
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run -nb '#1e1e2e' -sf '#cba6f7' -sb '#181825' -nf '#cdd6f4' -fn 'FiraCodeNerdFont-10'
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme catppuccin-mocha -config ~/.config/rofi/config.rasi
-bindsym $mod+Shift+p exec /.config/rofi/scripts/power
+bindsym $mod+Shift+p exec --no-startup-id ~/.config/rofi/scripts/power
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

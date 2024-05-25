@@ -5,7 +5,7 @@ alias v=nvim
 alias f=fastfetch
 
 # xset r rate 250 25
-xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Accel Speed" 0.5
+# xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Accel Speed" 0.5
 # setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 
 alias cdf='cd $(find ~/Projects -maxdepth 4 -type d -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'

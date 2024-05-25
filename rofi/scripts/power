@@ -4,15 +4,15 @@ power_off=' Power off'
 reboot=' Reboot'
 lock=' Lock'
 
-chosen=$(printf '%s;%s;%s;' "$power_off" "$reboot" "$lock" | rofi -dmenu -sep ';' -selected-row 2 -theme catppuccin-mocha)
+chosen=$(printf '%s;%s;%s;' "$lock" "$reboot" "$power_off" | rofi -dmenu -sep ';' -selected-row 0 -theme catppuccin-mocha)
  
 case "$chosen" in
   "$power_off")
-    rofi-prompt --query 'Shutdown?' && poweroff
+    poweroff
     ;;
 
   "$reboot")
-    rofi-prompt --query 'Reboot?' && reboot
+     reboot
     ;;
 
   "$lock")
