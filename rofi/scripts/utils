@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+polybarHide='󰢦 Menu hide'
+polybarShow='󰢦 Menu show'
+
+chosen=$(printf '%s;%s;' "$polybarShow" "$polybarHide" | rofi -dmenu -sep ';' -selected-row 0 -theme catppuccin-mocha)
+ 
+case "$chosen" in
+  "$polybarHide")
+    polybar-msg cmd hide
+    ;;
+
+  "$polybarShow")
+    polybar-msg cmd show
+    ;;
+  *) exit 1 ;;
+esac
+
