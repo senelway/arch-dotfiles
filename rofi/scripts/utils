@@ -3,7 +3,7 @@
 polybarHide='󰢦 Menu hide'
 polybarShow='󰢦 Menu show'
 
-chosen=$(printf '%s;%s;' "$polybarShow" "$polybarHide" | rofi -dmenu -sep ';' -selected-row 0 -theme catppuccin-mocha)
+chosen=$(printf '%s;%s;' "$polybarShow" "$polybarHide" | rofi -dmenu -sep ';' -selected-row 0)
  
 case "$chosen" in
   "$polybarHide")

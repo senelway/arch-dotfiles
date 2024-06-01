@@ -4,7 +4,7 @@ power_off=' Power off'
 reboot=' Reboot'
 lock=' Lock'
 
-chosen=$(printf '%s;%s;%s;' "$lock" "$reboot" "$power_off" | rofi -dmenu -sep ';' -selected-row 0 -theme catppuccin-mocha)
+chosen=$(printf '%s;%s;%s;' "$lock" "$reboot" "$power_off" | rofi -dmenu -sep ';' -selected-row 0)
  
 case "$chosen" in
   "$power_off")
