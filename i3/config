@@ -211,3 +211,13 @@ bindsym $mod+Shift+u exec --no-startup-id ~/.config/rofi/scripts/utils
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
+
+assign [class="Alacritty"] 1
+assign [class="Chromium"] 2
+assign [class="Chromium"] 2
+assign [class="Slack"] 3
+assign [class="Telegram Desktop"] 3
+exec --no-startup-id alacritty
+exec --no-startup-id chromium
+exec --no-startup-id slack
+exec --no-startup-id telegram-desktop
