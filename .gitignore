@@ -15,4 +15,8 @@ configstore
 discord
 user-dirs.dirs
 user-dirs.locale
-
+JetBrains
+.DS_Store
+autostart
+Electron
+menus
