@@ -18,10 +18,10 @@ sudo pacman -S --noconfirm \
   feh \
   miam \
   thunar \
+  unzip \
   ttf-fira-code ttf-firacode-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra \
   alacritty \
   neovim \
-  thunar \
   postgresql \
   docker \
   telegram-desktop \
@@ -35,6 +35,9 @@ git clone --recurse-submodules git@github.com:senelway/nvim.git
 git clone --recurse-submodules https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# add into .bashrc
+# exec zsh
 
 ln -s ~/.config/tmux/.tmux.conf ~/.tmux.conf
 ln -s ~/.config/.zshrc ~/.zshrc
