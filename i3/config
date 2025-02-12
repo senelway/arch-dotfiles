@@ -28,6 +28,10 @@ exec --no-startup-id xset r rate 250 25
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 exec --no-startup-id xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Accel Speed" 0.5
 
+# monitor configuration
+exec --no-startup-id xrandr --output DP-0 --primary --auto
+exec --no-startup-id xrandr --output DP-2 --auto --right-of DP-0
+
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/arch-4K.png
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -60,7 +64,10 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec alacritty
+
+bindsym $mod+m move workspace to output right
+bindsym $mod+p focus output right
 
 # kill focused window
 bindsym $mod+Shift+q kill
