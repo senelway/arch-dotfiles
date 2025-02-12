@@ -66,6 +66,7 @@ tiling_drag modifier titlebar
 # start a terminal
 # bindsym $mod+Return exec alacritty
 
+# monitor hotkeys
 bindsym $mod+m move workspace to output right
 bindsym $mod+p focus output right
 
