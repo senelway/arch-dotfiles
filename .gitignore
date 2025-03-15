@@ -1,28 +1,19 @@
-chromium
-dconf
-pulse
-Slack
-systemd
-github-copilot
-QtProject.conf
-go
-gh
-xfce4
-Thunar
-spotify
-mimeapps.list
-configstore
-discord
-user-dirs.dirs
-user-dirs.locale
-JetBrains
-.DS_Store
-autostart
-Electron
-menus
-.wrangler
-dlv
-nextjs-nodejs
-ngrok
-tidal-hifi
+# Allow only specific folders and files
+/*
 
+# Whitelist the following folders and files
+!/alacritty/
+!/gtk-3.0/
+!/i3/
+!/nvim/
+!/polybar/
+!/rofi/
+!/tmux/
+!/.Xresources
+!/.editorconfig
+!/.gitignore
+!/.gitmodules
+!/.zshrc
+!/README.md
+!/install.sh
+!/starship.toml
