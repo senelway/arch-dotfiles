@@ -26,7 +26,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/lib/gsd-xsettings
 exec --no-startup-id xset r rate 250 25
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
-exec --no-startup-id xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Accel Speed" 0.5
+exec --no-startup-id xinput set-prop "Apple Inc. Magic Trackpad" "libinput Accel Speed" 0.5
 
 # monitor configuration
 exec --no-startup-id xrandr --output DP-0 --primary --auto
