@@ -1,3 +1,8 @@
+add_newline = true
+
+[line_break]
+disabled = false
+
 format = """
 $os\
 $username\
@@ -112,7 +117,7 @@ threshold = 100
 style = 'bold red'
 
 [memory_usage]
-disabled = false
+disabled = true
 threshold = -1
 symbol = "󰍛 "
 style = 'bold dimmed green'

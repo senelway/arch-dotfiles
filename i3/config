@@ -29,10 +29,10 @@ exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_
 exec --no-startup-id xinput set-prop "Apple Inc. Magic Trackpad" "libinput Accel Speed" 0.5
 
 # monitor configuration
-exec --no-startup-id xrandr --output DP-0 --primary --auto
-exec --no-startup-id xrandr --output DP-2 --auto --right-of DP-0
+exec --no-startup-id xrandr --output DP-0 --auto
+exec --no-startup-id xrandr --output DP-2 --primary --auto --right-of DP-0
 
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/arch-4K.png
+# exec_always --no-startup-id feh --bg-scale ~/.config/i3/arch-4K.png
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -224,8 +224,8 @@ assign [class="Alacritty"] 1
 assign [class="Chromium"] 2
 assign [class="Chromium"] 2
 assign [class="Slack"] 3
-assign [class="Telegram Desktop"] 3
+assign [class="Telegram"] 3
 exec --no-startup-id alacritty
 exec --no-startup-id chromium
 exec --no-startup-id slack
-exec --no-startup-id telegram-desktop
+exec --no-startup-id telegram

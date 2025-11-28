@@ -4,7 +4,7 @@ power_off=' Power off'
 reboot=' Reboot'
 lock=' Lock'
 
-chosen=$(printf '%s;%s;%s;' "$lock" "$reboot" "$power_off" | rofi -dmenu -sep ';' -selected-row 0)
+chosen=$(printf '%s;%s;' "$reboot" "$power_off" | rofi -dmenu -sep ';' -selected-row 0)
  
 case "$chosen" in
   "$power_off")
@@ -14,10 +14,6 @@ case "$chosen" in
   "$reboot")
      reboot
     ;;
-
-  "$lock")
-    i3lock -i ~/.config/i3/lock.png
-      ;;
 
   *) exit 1 ;;
 esac

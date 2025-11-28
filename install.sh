@@ -5,7 +5,6 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm \
   blueman \
   bluez-utils \
-  firefox-developer-edition \
   zsh \
   polybar \
   gnupg \
@@ -15,7 +14,6 @@ sudo pacman -S --noconfirm \
   git \
   fzf \
   xclip \
-  feh \
   miam \
   thunar \
   unzip \
@@ -25,7 +23,6 @@ sudo pacman -S --noconfirm \
   postgresql \
   docker \
   telegram-desktop \
-  i3lock \
   rofi
 
 sudo systemctl enable bluetooth.service
