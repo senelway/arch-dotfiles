@@ -3,6 +3,7 @@ export GPG_TTY=$(tty)
 
 alias v=nvim
 alias f=fastfetch
+alias t=timedatectl
 
 # xset r rate 250 25
 # xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Accel Speed" 0.5
@@ -14,7 +15,6 @@ alias cdv='cd $(find ~/Projects -maxdepth 4 -type d -not -path "*/.git/*" -not -
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,node_modules,vendor,.vscode,*.log,*.pyc,*.o,*.tmp,.DS_Store,Library,
 .orbstack,.password-store}"'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-
 ZSH_THEME="robbyrussell"
 
 plugins=(
@@ -24,6 +24,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 
 export EDITOR=nvim
@@ -32,3 +33,11 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# bun completions
+[ -s "/home/senelway/.bun/_bun" ] && source "/home/senelway/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
