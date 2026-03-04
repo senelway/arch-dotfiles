@@ -11,6 +11,7 @@ alias t=timedatectl
 
 alias cdf='cd $(find ~/Projects -maxdepth 4 -type d -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf)'
 alias cdv='cd $(find ~/Projects -maxdepth 4 -type d -not -path "*/.git/*" -not -path "*/node_modules/*" | fzf) && nvim .'
+alias ruql='~/Projects/ruql/target/release/ruql'
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,node_modules,vendor,.vscode,*.log,*.pyc,*.o,*.tmp,.DS_Store,Library,
 .orbstack,.password-store}"'
