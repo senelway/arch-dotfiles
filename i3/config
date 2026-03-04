@@ -29,8 +29,7 @@ exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_
 exec --no-startup-id xinput set-prop "Apple Inc. Magic Trackpad USB-C" "libinput Accel Speed" 0.5
 
 # monitor configuration
-exec --no-startup-id xrandr --output DP-0 --auto
-# exec --no-startup-id xrandr --output DP-2 --primary --auto --right-of DP-0
+exec --no-startup-id xrandr --output DP-2 --primary --auto --output DP-0 --auto --left-of DP-2
 
 # exec_always --no-startup-id feh --bg-scale ~/.config/i3/arch-4K.png
 
